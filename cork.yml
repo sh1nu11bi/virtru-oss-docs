@@ -1,0 +1,4 @@
+type: virtru/cork-server-project:latest
+
+params:
+  docker_tag: virtru/virtru-oss-docs

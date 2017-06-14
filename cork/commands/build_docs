@@ -1,0 +1,5 @@
+#!/bin/bash
+
+set -e
+
+sphinx-build -b ${CORK_PARAM_BUILD_TYPE} . "_build"

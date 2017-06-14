@@ -1,0 +1,22 @@
+version: 1
+
+params:
+  build_type:
+    type: string
+    description: The build type for your sphinx docs
+    default: "html"
+
+stages:
+  build-docs:
+    - name: build_docs
+      type: command
+      args:
+        command: build_docs
+        params: 
+          build_type: '{{ param "build_type" }}'
+
+
+  default:
+    - type: stage
+      args:
+        stage: build-docs
