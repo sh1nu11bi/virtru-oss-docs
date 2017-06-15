@@ -2,4 +2,4 @@
 
 set -e
 
-sphinx-build -b ${CORK_PARAM_BUILD_TYPE} . "_build"
+sphinx-build -b ${CORK_PARAM_BUILD_TYPE} -c ${CORK_DIR}/files . "_build"
